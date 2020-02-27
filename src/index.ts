@@ -36,7 +36,7 @@ type TrackType = 'AddPaymentInfo' | 'AddToCart' | 'AddToWishlist'
   | 'Purchase' | 'Schedule' | 'Search' | 'StartTrial'
   | 'SubmitApplication' | 'Subscribe' | 'ViewContent' | 'PageView'
 
-export const facebookTrack = (trackType: TrackType, options?: any) => {
+export const track = (trackType: TrackType, options?: any) => {
   if (typeof window !== 'undefined' && initialized && 'fbq' in window) {
     if (options) (window as any).fbq('track', trackType, options)
     else (window as any).fbq('track', trackType)
@@ -46,7 +46,7 @@ export const facebookTrack = (trackType: TrackType, options?: any) => {
   }
 }
 
-export const facebookCustomTrack = <T extends string>(trackType: T, options?: any) => {
+export const trackCustom = <T extends string>(trackType: T, options?: any) => {
   if (typeof window !== 'undefined' && initialized && 'fbq' in window) {
     if (options) (window as any).fbq('trackCustom', trackType, options)
     else (window as any).fbq('trackCustom', trackType)
@@ -56,4 +56,3 @@ export const facebookCustomTrack = <T extends string>(trackType: T, options?: an
   }
 }
 
-export const pageView = () => facebookTrack('PageView')

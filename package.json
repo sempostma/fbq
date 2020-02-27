@@ -4,6 +4,15 @@
   "description": "Facebook pixel",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sempostma/fbq"
+  },
+  "homepage": "https://github.com/sempostma/fbq",
+  "bugs": {
+    "email": "fbq@esstudio.nl",
+    "url": "https://github.com/sempostma/fbq/issues"
+  },
   "files": [
     "dist/",
     "LICENSE"

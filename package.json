@@ -1,0 +1,31 @@
+{
+  "name": "fbq",
+  "version": "0.1.0",
+  "description": "Facebook pixel",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "start": "tsc --watch",
+    "test": "jest",
+    "lint": "tslint -c tslint.json 'src/**/*.ts'",
+    "lint:fix": "tslint --fix -c tslint.json 'src/**/*.ts'"
+  },
+  "keywords": [
+    "fbq",
+    "fbp",
+    "facebook",
+    "pixel",
+    "typescript"
+  ],
+  "author": "Sem Postma",
+  "license": "MIT",
+  "devDependencies": {
+    "tslint": "^6.0.0",
+    "typescript": "^3.8.2"
+  }
+}

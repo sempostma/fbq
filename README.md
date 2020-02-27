@@ -46,10 +46,6 @@ track('PageView', advancedMatching, options)
 
 * [TrackType](#tracktype)
 
-### Variables
-
-* [initialized](#let-initialized)
-
 ### Functions
 
 * [init](#const-init)
@@ -63,14 +59,6 @@ track('PageView', advancedMatching, options)
 Ƭ **TrackType**: *"AddPaymentInfo" | "AddToCart" | "AddToWishlist" | "CompleteRegistration" | "Contact" | "CustomizeProduct" | "Donate" | "FindLocation" | "InitiateCheckout" | "Lead" | "Purchase" | "Schedule" | "Search" | "StartTrial" | "SubmitApplication" | "Subscribe" | "ViewContent" | "PageView"*
 
 *Defined in [index.ts:33](https://github.com/sempostma/fbq/blob/989e188/src/index.ts#L33)*
-
-## Variables
-
-### `Let` initialized
-
-• **initialized**: *boolean* = false
-
-*Defined in [index.ts:2](https://github.com/sempostma/fbq/blob/989e188/src/index.ts#L2)*
 
 ## Functions
 

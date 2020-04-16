@@ -4,7 +4,7 @@ let initialized = false
 export const init = (pixelId: string, advancedMatching = {}, options = { autoConfig: true }) => {
   if (typeof window === 'undefined') return initialized
   if (initialized) return initialized
-  if (typeof pixelId !== 'string' || pixelId.trim().length > 0) throw new TypeError('pixelId should be a non empty "string"')
+  if (typeof pixelId !== 'string' || pixelId.trim().length === 0) throw new TypeError('pixelId should be a non empty "string"')
   if (typeof advancedMatching !== 'object') throw new TypeError('advancedMatching should be of type "object"')
   if (typeof options !== 'object') throw new TypeError('options should be of type "object"')
 

@@ -20,6 +20,7 @@ export const init = (pixelId: string, advancedMatching = {}, options = { autoCon
   'https://connect.facebook.net/en_US/fbevents.js');
   // End Facebook Pixel Code -->
   /* tslint:enable */
+
   const fbq = (window as any).fbq
   fbq('track', 'PageView')
   if (options.autoConfig === false) {

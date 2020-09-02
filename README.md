@@ -13,7 +13,7 @@ npm install --save fbq
 ### Simple usecase
 
 ```javascript
-import { include, track } from 'fbq'
+import { init, track } from 'fbq'
 
 const pixel = 'xxxxxxxxxxxxxxx' // https://facebook.com/business/help/742478679120153
 
@@ -24,7 +24,7 @@ track('PageView')
 ### More complex usecase
 
 ```javascript
-import { include, track, trackCustom } from 'fbq'
+import { init, track, trackCustom } from 'fbq'
 
 const pixel = 'xxxxxxxxxxxxxxx' // https://facebook.com/business/help/742478679120153
 const advancedMatching = {
